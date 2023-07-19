@@ -1,0 +1,20 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: deepskyblue;
+}
+
+.title--list {
+    background-color: azure;
+}
+
+.orders {
+    background-color: azure;
+}
+
+ul {
+    list-style-type: trad-chinese-informal;
+    align-items: center;
+}

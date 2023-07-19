@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
     <title>{{ title }}</title>
 </head>
 <body>
-    <h1>{{ title }}</h1>
+    <h1 class="title--list">{{ title }}</h1>
     <ul>{% for order in order_list %}
-        <li><a href="/orders/{{ order_list.index(order) }}">{{ order.customer_name }}</a></li>
+        <li class="orders"><a href="/orders/{{ order_list.index(order) }}">{{ order.customer_name }}</a></li>
     {% endfor %}</ul>
 </body>
 </html>
